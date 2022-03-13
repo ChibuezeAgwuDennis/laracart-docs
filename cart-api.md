@@ -11,18 +11,20 @@ Instances is a way that we can use multiple carts within the same session. Each 
     
 <a name="attributes"></a>
 ## Attributes
+```php
     
-    // Set or update an attribute's value
-    LaraCart::setAttribute('label', 'Luke's Cart');
+// Set or update an attribute's value
+LaraCart::setAttribute('label', 'Luke's Cart');
+
+// Get a specific attribute's value
+LaraCart::getAttribute('label');
     
-    // Get a specific attribute's value
-    LaraCart::getAttribute('label');
+// Get all the attributes
+LaraCart::getAttributes();
     
-    // Get all the attributes
-    LaraCart::getAttributes();
-    
-    // Remove an attribute
-    LaraCart::removeAttribute('label');
+// Remove an attribute
+LaraCart::removeAttribute('label');
+```
  
 <a name="totals"></a>
 ## Totals
